@@ -10,6 +10,30 @@ header {
   height: 100vh;
 }
 
+#headerPicture {
+  border-radius: 40%;
+  width: 350px;
+}
+
+.flex-container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.item-01,
+.item-03 {
+  padding: 20px;
+  width: auto;
+  height: 150px;
+  border-radius: 40px;
+  text-align: center;
+}
+
 h1,
 h2,
 h3 {
@@ -21,6 +45,10 @@ h3 {
 #navBar {
   position: sticky;
   top: 40px;
+}
+
+#navBar > a {
+  color: palevioletred;
 }
 
 .grid-container {
@@ -38,7 +66,7 @@ h3 {
 }
 
 a {
-  color: aqua;
+  color: white;
   text-align: center;
   display: inline-block;
   text-decoration: none;
@@ -66,4 +94,34 @@ div {
   background-color: black;
   margin: 1% 3% 1% 3%;
   padding: 2%;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  #navBar > a {
+    color: lawngreen;
+  }
+  header {
+    background-image: url("/images/headerImage2.jpg");
+  }
+  #headerPicture {
+    width: 200px;
+  }
+}
+
+/* tablet */
+@media only screen and (max-width: 1024px) {
+  #navBar > a {
+    color: palevioletred;
+  }
+  #headerPicture {
+    width: 250px;
+  }
+}
+
+/* laptop */
+@media only screen and (min-width: 1024px) {
+  #navBar > a {
+    color: aqua;
+  }
 }

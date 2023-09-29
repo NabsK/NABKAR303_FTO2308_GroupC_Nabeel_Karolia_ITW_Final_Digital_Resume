@@ -11,20 +11,23 @@
 
 <body>
 
-    <header>
-        <picture>
-            <source srcset="images\face.jpg" media="(max-width: 600px)">
-            <source srcset="images\Screenshot_20230907-123742_Gallery.jpg" media="(max-width: 900px)">
-            <img src="images\waist and shoulders.jpg" alt="My Photo">
+    <header class="flex-container1">
+        <div class="flex-item item-01">
+            <h1>Hi.</h1>
+            <h1>I'm Nabeel Karolia.</h1>
+        </div>
+        <picture class="flex-item item-02">
+            <source srcset="images\smallPhoto.jpg" media="(max-width: 600px)">
+            <source srcset="images\mediumPhoto.jpg" media="(max-width: 900px)">
+            <img src="images\bigPhoto.jpg" alt="My Photo" id="headerPicture">
         </picture>
-        <h1>Hi.</h1>
-        <h1>I'm Nabeel Karolia.</h1>
-        <h2>Aspiring full-stack developer</h2>
-        <h3>Welcome to my digital resume.</h3>
-        <a href="#contact">Get in touch</a>
-        <br><br>
-        <a href="https://github.com/NabsK" target="_blank"><img src="images/github-mark-white.png"
-                width="20px">GitHub</a>
+        <div class="flex-item item-03">
+            <h2>I am an aspiring full-stack developer<br>Welcome to my digital resume.</h2>
+            <a href="#contact">Get in touch</a>
+            <br><br>
+            <a href="https://github.com/NabsK" target="_blank"><img src="images/github-mark-white.png"
+                    width="20px">GitHub</a>
+        </div>
     </header>
 
     <nav class="grid-container" id="navBar">
@@ -38,19 +41,18 @@
     <section>
         <div>
             <h2 id="education" class="heading">Education</h2>
-            <h3>
-                Intro to Web at
-                <a href="https://www.codespace.co.za/" target="_blank">Codespace academy</a>
-            </h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
-            </p>
+            <ol>
+                <li>2016 to 2020: Attended highschool at <a
+                        href="https://www.uj.ac.za/faculties/education/research/community-engagement/uj-metropolitan-academy/"
+                        target="_blank">UJ metropolitan academy</a></li>
+                <li>2020 to 2021:Self studying coding online at <a href="https://www.udemy.com/"
+                        target="_blank">Udemy</a>. While working as a online personal assistant</li>
+                <li>2021:Almost completed <a href="https://www.vzap.co.za/" target="_blank">VZAP</a> java course.</li>
+                <li>2022:Completed Java programming course at <a href="https://www.mecerintered.co.za/"
+                        target="_blank">Mecer Inter-Ed.</a></li>
+                <li>2023:Studying web development at <a href="https://www.codespace.co.za/"
+                        target="_blank">Codespace</a> academy.</li>
+            </ol>
         </div>
 
         <div>
@@ -138,9 +140,8 @@
 </body>
 
 </html>
-<!-- take face photo -->
+<!-- compress images -->
 <!-- add alt for images -->
 <!-- change sizes for different view ports -->
 <!-- add back to top button.OPTIONAL -->
 <!-- add css animation -->
-<!-- make nav links work -->
