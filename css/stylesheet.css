@@ -2,6 +2,7 @@ body {
   margin: 0%;
   background-color: black;
   color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 header {
@@ -20,14 +21,13 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   flex-wrap: wrap;
   gap: 40px;
 }
 
 .item-01,
 .item-03 {
-  padding: 20px;
+  padding: 10px;
   width: auto;
   height: 150px;
   border-radius: 40px;
@@ -36,22 +36,22 @@ header {
 
 h1,
 h3 {
-  background-color: black;
   border-radius: 10px;
   width: fit-content;
 }
 
 .center {
   text-align: center;
-  background-color: aqua;
-  border-radius: 10px;
-  color: black;
-  border: 2px solid white;
+  border-radius: 100px;
+  color: aqua;
+  border-top: 2px solid white;
+  padding-top: 3px;
 }
 
 #navBar {
   position: sticky;
   top: 40px;
+  border: 1px solid aqua;
 }
 
 #navBar > a {
@@ -103,6 +103,7 @@ a {
 
 footer {
   background-color: black;
+  border-radius: 20px;
 }
 
 .flex-container {
@@ -115,12 +116,10 @@ footer {
 }
 
 .flex-item {
-  padding: 20px;
+  padding: 1px;
 }
 
-/* temp css, change it! */
 div {
-  background-color: black;
   margin: 1% 3% 1% 3%;
   padding: 2%;
 }
@@ -128,32 +127,68 @@ div {
 /* mobile */
 @media only screen and (max-width: 600px) {
   #navBar > a {
-    color: aqua;
+    color: gold;
+  }
+  #navBar {
+    border: 1px solid gold;
   }
   header {
-    background-image: url("/images/headerImage2.jpg");
+    background-image: url("/images/headerImage3.jpg");
   }
   #headerPicture {
-    width: 200px;
+    width: 240px;
+    height: 250px;
+  }
+  .center {
+    color: gold;
+  }
+  footer {
+    border-top: 2px solid gold;
   }
 }
 
 /* tablet */
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 601px) {
   #navBar > a {
-    color: lawngreen;
+    color: purple;
+  }
+  #navBar {
+    border: 1px solid purple;
   }
   header {
-    background-image: url("/images/headerImage2.jpg");
+    background-image: url("/images/headerImage3.jpg");
   }
   #headerPicture {
-    width: 250px;
+    width: 240px;
+    height: 250px;
+  }
+  .center {
+    color: purple;
+  }
+  footer {
+    border-top: 2px solid purple;
   }
 }
 
 /* laptop */
 @media only screen and (min-width: 1024px) {
+  header {
+    background-image: url("/images/headerImage.jpg");
+  }
   #navBar > a {
     color: aqua;
+  }
+  #navBar {
+    border: 1px solid aqua;
+  }
+  #headerPicture {
+    width: 260px;
+    height: 260px;
+  }
+  .center {
+    color: aqua;
+  }
+  footer {
+    border-top: 2px solid aqua;
   }
 }
