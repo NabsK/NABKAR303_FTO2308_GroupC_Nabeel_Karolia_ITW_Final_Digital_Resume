@@ -50,6 +50,7 @@ header {
   border-radius: 40px;
   text-align: center;
 }
+
 /* header style */
 
 /* headings style */
@@ -66,6 +67,7 @@ h3 {
   border-top: 2px solid white;
   padding-top: 3px;
 }
+
 /* headings style */
 
 /* navigation menu */
@@ -76,7 +78,9 @@ h3 {
 }
 
 #navBar > a {
-  color: palevioletred;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-radius: 20px;
 }
 
 .grid-container {
@@ -92,6 +96,7 @@ h3 {
   text-align: center;
   padding: 2%;
 }
+
 /* navigation menu */
 
 /* section content */
@@ -131,31 +136,61 @@ h3 {
 }
 /* section content */
 
+/* footer */
 footer {
-  background-color: black;
+  background-image: url("/images/headerImage.jpg");
+  background-size: cover;
+
   border-radius: 20px;
 }
+
+form {
+  color: rgba(169, 169, 169, 0.348);
+  padding: 3px;
+}
+
+input {
+  color: white;
+  background-color: black;
+  border: 2px solid rgb(25, 114, 9);
+  border-radius: 10px;
+}
+
+textarea,
+select,
+option {
+  background-color: lightgrey;
+  color: black;
+  border-radius: 10px;
+  border: 2px dotted rgb(25, 114, 9);
+}
+/* footer */
 
 /* mobile */
 @media only screen and (max-width: 600px) {
   #navBar > a {
-    color: gold;
+    color: rgb(244, 14, 175);
   }
+
   #navBar {
-    border: 1px solid gold;
+    border: 1px solid rgb(244, 14, 175);
   }
+
   header {
     background-image: url("/images/headerImage3.jpg");
   }
+
   #headerPicture {
     width: 240px;
     height: 250px;
   }
+
   .center {
-    color: gold;
+    color: rgb(244, 14, 175);
   }
+
   footer {
-    border-top: 2px solid gold;
+    border-top: 2px solid rgb(244, 14, 175);
   }
 }
 
@@ -164,19 +199,24 @@ footer {
   #navBar > a {
     color: purple;
   }
+
   #navBar {
     border: 1px solid purple;
   }
+
   header {
     background-image: url("/images/headerImage3.jpg");
   }
+
   #headerPicture {
     width: 240px;
     height: 250px;
   }
+
   .center {
     color: purple;
   }
+
   footer {
     border-top: 2px solid purple;
   }
@@ -187,19 +227,24 @@ footer {
   header {
     background-image: url("/images/headerImage.jpg");
   }
+
   #navBar > a {
     color: aqua;
   }
+
   #navBar {
     border: 1px solid aqua;
   }
+
   #headerPicture {
-    width: 260px;
-    height: 260px;
+    width: 280px;
+    height: 280px;
   }
+
   .center {
     color: aqua;
   }
+
   footer {
     border-top: 2px solid aqua;
   }
@@ -240,11 +285,11 @@ a:hover {
   }
 
   50% {
-    filter: contrast(3px);
+    transform: scale(120%);
   }
 
   100% {
-    transform: scale(120%);
+    transform: scale(100%);
   }
 }
 
@@ -258,6 +303,7 @@ img:hover {
   0% {
     color: white;
   }
+
   100% {
     color: white;
   }
