@@ -5,6 +5,23 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+a {
+  color: chartreuse;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+div {
+  margin: 1% 3% 1% 3%;
+  padding: 2%;
+}
+
+h3 {
+  color: grey;
+}
+
+/* header style */
 header {
   background-image: url("/images/headerImage.jpg");
   background-size: cover;
@@ -33,7 +50,9 @@ header {
   border-radius: 40px;
   text-align: center;
 }
+/* header style */
 
+/* headings style */
 h1,
 h3 {
   border-radius: 10px;
@@ -47,7 +66,9 @@ h3 {
   border-top: 2px solid white;
   padding-top: 3px;
 }
+/* headings style */
 
+/* navigation menu */
 #navBar {
   position: sticky;
   top: 40px;
@@ -56,17 +77,6 @@ h3 {
 
 #navBar > a {
   color: palevioletred;
-}
-
-.list-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-}
-
-#list-item {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  padding: 5px;
 }
 
 .grid-container {
@@ -82,12 +92,18 @@ h3 {
   text-align: center;
   padding: 2%;
 }
+/* navigation menu */
 
-a {
-  color: white;
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
+/* section content */
+.list-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+#list-item {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  padding: 5px;
 }
 
 .certificate-container {
@@ -99,11 +115,6 @@ a {
 .certificate-item {
   text-align: center;
   padding: 5px;
-}
-
-footer {
-  background-color: black;
-  border-radius: 20px;
 }
 
 .flex-container {
@@ -118,10 +129,11 @@ footer {
 .flex-item {
   padding: 1px;
 }
+/* section content */
 
-div {
-  margin: 1% 3% 1% 3%;
-  padding: 2%;
+footer {
+  background-color: black;
+  border-radius: 20px;
 }
 
 /* mobile */
@@ -191,4 +203,69 @@ div {
   footer {
     border-top: 2px solid aqua;
   }
+}
+
+/* keyframes */
+@keyframes animatedIcon {
+  0% {
+    transform: scale(90%);
+  }
+
+  25% {
+    filter: contrast(3px);
+  }
+
+  50% {
+    filter: brightness(150%);
+  }
+
+  100% {
+    transform: translate(0px, -10px);
+  }
+}
+
+a:hover {
+  animation-name: animatedIcon;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animatedImage {
+  0% {
+    transform: scale(100%);
+  }
+
+  25% {
+    filter: brightness(80%);
+  }
+
+  50% {
+    filter: contrast(3px);
+  }
+
+  100% {
+    transform: scale(120%);
+  }
+}
+
+img:hover {
+  animation-name: animatedImage;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animatedNav {
+  0% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+
+nav > .grid-item:hover {
+  animation-name: animatedNav;
+  animation-delay: 0ms;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
 }
