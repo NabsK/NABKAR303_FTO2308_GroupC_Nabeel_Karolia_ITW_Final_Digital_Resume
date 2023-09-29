@@ -1,6 +1,6 @@
 body {
   margin: 0%;
-  /* background-color: black; */
+  background-color: black;
   color: white;
 }
 
@@ -35,11 +35,18 @@ header {
 }
 
 h1,
-h2,
 h3 {
   background-color: black;
   border-radius: 10px;
   width: fit-content;
+}
+
+.center {
+  text-align: center;
+  background-color: aqua;
+  border-radius: 10px;
+  color: black;
+  border: 2px solid white;
 }
 
 #navBar {
@@ -49,6 +56,17 @@ h3 {
 
 #navBar > a {
   color: palevioletred;
+}
+
+.list-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+#list-item {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  padding: 5px;
 }
 
 .grid-container {
@@ -110,7 +128,7 @@ div {
 /* mobile */
 @media only screen and (max-width: 600px) {
   #navBar > a {
-    color: lawngreen;
+    color: aqua;
   }
   header {
     background-image: url("/images/headerImage2.jpg");
@@ -123,7 +141,10 @@ div {
 /* tablet */
 @media only screen and (max-width: 1024px) {
   #navBar > a {
-    color: palevioletred;
+    color: lawngreen;
+  }
+  header {
+    background-image: url("/images/headerImage2.jpg");
   }
   #headerPicture {
     width: 250px;
