@@ -17,11 +17,27 @@ div {
   padding: 2%;
 }
 
+/* headings style start*/
+h1,
+h3 {
+  border-radius: 10px;
+  width: fit-content;
+}
+
 h3 {
   color: grey;
 }
 
-/* header style */
+.center {
+  text-align: center;
+  border-radius: 100px;
+  color: aqua;
+  border-top: 2px solid white;
+  padding-top: 3px;
+}
+/* headings style end*/
+
+/* header style start*/
 header {
   background-image: url("/images/headerImage.jpg");
   background-size: cover;
@@ -50,31 +66,13 @@ header {
   border-radius: 40px;
   text-align: center;
 }
+/* header style end*/
 
-/* header style */
-
-/* headings style */
-h1,
-h3 {
-  border-radius: 10px;
-  width: fit-content;
-}
-
-.center {
-  text-align: center;
-  border-radius: 100px;
-  color: aqua;
-  border-top: 2px solid white;
-  padding-top: 3px;
-}
-
-/* headings style */
-
-/* navigation menu */
+/* navigation menu start */
 #navBar {
   position: sticky;
-  top: 40px;
-  border: 1px solid aqua;
+  top: 20px;
+  border-top: 1px solid aqua;
 }
 
 #navBar > a {
@@ -96,10 +94,10 @@ h3 {
   text-align: center;
   padding: 2%;
 }
+/* navigation menu end*/
 
-/* navigation menu */
-
-/* section content */
+/* section content start*/
+/* education */
 .list-container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -110,7 +108,9 @@ h3 {
   grid-column-end: 2;
   padding: 5px;
 }
+/* education */
 
+/* certificates */
 .certificate-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -121,7 +121,9 @@ h3 {
   text-align: center;
   padding: 5px;
 }
+/* certificates */
 
+/* skills */
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -134,9 +136,11 @@ h3 {
 .flex-item {
   padding: 1px;
 }
-/* section content */
+/* skills */
 
-/* footer */
+/* section content end*/
+
+/* footer start*/
 footer {
   background-image: url("/images/headerImage.jpg");
   background-size: cover;
@@ -145,7 +149,7 @@ footer {
 }
 
 form {
-  color: rgba(169, 169, 169, 0.348);
+  color: rgba(169, 169, 169, 0.666);
   padding: 3px;
 }
 
@@ -164,10 +168,13 @@ option {
   border-radius: 10px;
   border: 2px dotted rgb(25, 114, 9);
 }
-/* footer */
+/* footer end*/
 
 /* mobile */
 @media only screen and (max-width: 600px) {
+  p {
+    font-size: 14px;
+  }
   #navBar > a {
     color: rgb(244, 14, 175);
   }
@@ -196,12 +203,15 @@ option {
 
 /* tablet */
 @media only screen and (min-width: 601px) {
+  p {
+    font-size: 16px;
+  }
   #navBar > a {
     color: purple;
   }
 
   #navBar {
-    border: 1px solid purple;
+    border-bottom: 1px solid purple;
   }
 
   header {
@@ -224,6 +234,9 @@ option {
 
 /* laptop */
 @media only screen and (min-width: 1024px) {
+  p {
+    font-size: 15px;
+  }
   header {
     background-image: url("/images/headerImage.jpg");
   }
@@ -233,7 +246,7 @@ option {
   }
 
   #navBar {
-    border: 1px solid aqua;
+    border-bottom: 1px solid aqua;
   }
 
   #headerPicture {
